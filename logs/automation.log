@@ -1,0 +1,3 @@
+10:29:17.780 [main] INFO  testCase.TC_004_VerifyInvalidUser - Clicking on login button
+10:29:19.846 [main] INFO  testCase.TC_004_VerifyInvalidUser - Printing the error message of invalid google login
+10:29:19.846 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_004_VerifyInvalidUser finished *****
