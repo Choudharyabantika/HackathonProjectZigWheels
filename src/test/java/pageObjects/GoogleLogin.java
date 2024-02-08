@@ -36,6 +36,7 @@ public class GoogleLogin extends BasePage{
 		btnLoginSignUp.click();
 	}
 	public void clickRegisterWithGoogle() {
+		highlightElement(btnRegWithGoogle);
 		btnRegWithGoogle.click();
 		Set<String> winHandleBefore = driver.getWindowHandles();  // Handle browser window switch driver to OneCognizant Page
  

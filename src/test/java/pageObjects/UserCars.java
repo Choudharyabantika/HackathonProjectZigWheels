@@ -26,12 +26,15 @@ public class UserCars extends BasePage{
 	
 	public void clickAllPopularModels() throws InterruptedException{
 		
+		scrollBy("500");
+		
 		for(WebElement checkBox:checkBoxes) {
 			
 			Thread.sleep(2000);
 			clickByJs(checkBox);
 			
 		}
+		
 	}
 	
 	

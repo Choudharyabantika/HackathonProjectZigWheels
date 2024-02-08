@@ -1,5 +1,9 @@
 package utilities;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -18,12 +22,15 @@ public class ExtentReportManager extends BaseClass implements ITestListener{
 	public ExtentTest test; // creating test case entries in the report and update status of the test methods
 	
 	public void onStart(ITestContext context) {
-			
-		sparkReporter=new ExtentSparkReporter(System.getProperty("user.dir")+ "/reports/myReport.html");//specify location of the report
 		
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
+		String repName = "Test-Report-" + timeStamp + ".html";
+		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report
+	
 		sparkReporter.config().setDocumentTitle("Automation Report"); // TiTle of report
 		sparkReporter.config().setReportName("Functional Testing"); // name of the report
-		sparkReporter.config().setTheme(Theme.STANDARD);
+		sparkReporter.config().setTheme(Theme.DARK);
+		
 		
 		extent=new ExtentReports();
 		extent.attachReporter(sparkReporter);
@@ -33,6 +40,18 @@ public class ExtentReportManager extends BaseClass implements ITestListener{
 		extent.setSystemInfo("Tester Name","Abantika");
 		extent.setSystemInfo("os","Windows11");
 		extent.setSystemInfo("Browser name","Chrome,Edge");
+	
+		String os=context.getCurrentXmlTest().getParameter("os");
+		extent.setSystemInfo("operating System", os);
+		
+		String browser=context.getCurrentXmlTest().getParameter("browser");
+		extent.setSystemInfo("Browser", browser);
+		
+		
+		List<String> includedGroups = context.getCurrentXmlTest().getIncludedGroups();
+		if (!includedGroups.isEmpty()) {
+			extent.setSystemInfo("Groups", includedGroups.toString());
+		}
 					
 	}
 
@@ -40,6 +59,7 @@ public class ExtentReportManager extends BaseClass implements ITestListener{
 	public void onTestSuccess(ITestResult result) {
 		
 		test = extent.createTest(result.getName()); // create a new enty in the report
+		test.assignCategory(result.getMethod().getGroups()); // to display groups in report
 		test.log(Status.PASS, "Test case PASSED is:" + result.getName()); // update status p/f/s
 		try {
 			
@@ -54,6 +74,7 @@ public class ExtentReportManager extends BaseClass implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		
 		test = extent.createTest(result.getName());
+		test.assignCategory(result.getMethod().getGroups()); // to display groups in report
 		test.log(Status.FAIL, "Test case FAILED is:" + result.getName());
 		test.log(Status.FAIL, "Test Case FAILED cause is: " + result.getThrowable()); 
 		try {
@@ -68,6 +89,7 @@ public class ExtentReportManager extends BaseClass implements ITestListener{
 	public void onTestSkipped(ITestResult result) {
 
 		test = extent.createTest(result.getName());
+		test.assignCategory(result.getMethod().getGroups()); // to display groups in report
 		test.log(Status.SKIP, "Test case SKIPPED is:" + result.getName());
 		
 	}

@@ -46,6 +46,7 @@ public class UpcomingBikes extends BasePage{
 	public void selectUpcomingBikeFromDropDown() throws IOException, InterruptedException {
 		manufacturer.click();
 		ss=new Screenshot(driver);
+		highlightElement(manufacturer);
 		Select select=new Select(manufacturer);
 		Thread.sleep(2000);
 		ss.takeFullScreenShot("Manufacturers");
@@ -56,7 +57,8 @@ public class UpcomingBikes extends BasePage{
 	
 	
 	public void getNewBikes() throws InterruptedException, IOException{
-		scrollBy("1300");
+		scrollBy("1400");
+		highlightElement(seeMore);
 		clickByJs(seeMore);
 		ss=new Screenshot(driver);
 		ss.takeFullScreenShot("Upcoming Honda Bikes");
@@ -66,6 +68,7 @@ public class UpcomingBikes extends BasePage{
 			{
 					if(Integer.parseInt(bikeAvailable.get(i).getAttribute("data-price"))<400000 )
 								{	
+									
 									ExcelUtils.setcelldata(xfile, "NewBikes", j, 0, modelName.get(i).getText());
 									System.out.println(modelName.get(i).getText());
 									ExcelUtils.setcelldata(xfile, "NewBikes", j, 1, price.get(i).getText());
@@ -86,6 +89,7 @@ public class UpcomingBikes extends BasePage{
 	}
 	
 	public void navigateToHomePage() {
+	
 		zigwheels.click();
 		
 		}

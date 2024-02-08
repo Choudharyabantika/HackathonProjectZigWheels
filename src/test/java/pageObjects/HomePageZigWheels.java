@@ -36,7 +36,7 @@ public class HomePageZigWheels  extends BasePage {
 		Thread.sleep(2000);
 		Screenshot ss= new Screenshot(driver);
 		ss.takeFullScreenShot("UpcomingBikes");
-		
+		highlightElement(upcomingBikes);
 		upcomingBikes.click();
 	}
 	
@@ -47,6 +47,7 @@ public class HomePageZigWheels  extends BasePage {
 		Thread.sleep(2000);
 		Screenshot ss=new Screenshot(driver);
 		ss.takeFullScreenShot("usedCarsHover");
+		highlightElement(location);
 		location.click();
 	}
 	

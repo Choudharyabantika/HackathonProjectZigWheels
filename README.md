@@ -59,12 +59,12 @@ This Java Selenium project automates tasks on the Zigwheels page, including navi
 
 ## Dependencies
 - Selenium: `<4.16.1>`
-- TestNG: `<7.7.1>`
+- TestNG: `<7.8.0>`
 - Apache POI: `<5.2.5>`
 - Extent Report: `<5.1.1>`
 - Logging: `<2.22.1>`
  
-## Scripting Language
+## Programming Language
 - Java
 
 ## Framework

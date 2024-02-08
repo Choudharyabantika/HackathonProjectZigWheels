@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-02T10:08:01 IST" name="Suite" finished-at="2024-02-02T10:10:30 IST" duration-ms="148955">
+  <suite started-at="2024-02-07T14:42:50 IST" name="Suite" finished-at="2024-02-07T14:44:09 IST" duration-ms="79077">
     <groups>
       <group name="Master">
         <method signature="TC_001_NewBikes_UpcomingBikes.navigateNewBikes()[pri:1, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" name="navigateNewBikes" class="testCase.TC_001_NewBikes_UpcomingBikes"/>
@@ -38,9 +38,9 @@
         <method signature="TC_004_VerifyInvalidUser.fetchErrorMessage()[pri:11, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" name="fetchErrorMessage" class="testCase.TC_004_VerifyInvalidUser"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2024-02-02T10:08:01 IST" name="MasterTest" finished-at="2024-02-02T10:10:30 IST" duration-ms="148955">
+    <test started-at="2024-02-07T14:42:50 IST" name="MasterTest" finished-at="2024-02-07T14:44:09 IST" duration-ms="79077">
       <class name="testCase.TC_004_VerifyInvalidUser">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-02T10:08:01 IST" name="setup" finished-at="2024-02-02T10:08:14 IST" duration-ms="12306" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-07T14:42:55 IST" name="setup" finished-at="2024-02-07T14:43:06 IST" duration-ms="11104" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,51 +56,51 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="navigateNewBikes()[pri:1, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-02T10:08:14 IST" name="navigateNewBikes" finished-at="2024-02-02T10:09:04 IST" duration-ms="50010" status="PASS">
+        <test-method signature="navigateNewBikes()[pri:1, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-07T14:43:06 IST" name="navigateNewBikes" finished-at="2024-02-07T14:43:12 IST" duration-ms="5721" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateNewBikes -->
-        <test-method signature="verify_UpcomingBikes_section()[pri:2, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-02T10:09:04 IST" name="verify_UpcomingBikes_section" finished-at="2024-02-02T10:09:04 IST" duration-ms="143" status="PASS">
+        <test-method signature="verify_UpcomingBikes_section()[pri:2, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-07T14:43:13 IST" name="verify_UpcomingBikes_section" finished-at="2024-02-07T14:43:13 IST" duration-ms="156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_UpcomingBikes_section -->
-        <test-method signature="selectManufacturers()[pri:3, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-02T10:09:05 IST" name="selectManufacturers" finished-at="2024-02-02T10:09:10 IST" duration-ms="4977" status="PASS">
+        <test-method signature="selectManufacturers()[pri:3, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-07T14:43:13 IST" name="selectManufacturers" finished-at="2024-02-07T14:43:16 IST" duration-ms="3367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectManufacturers -->
-        <test-method signature="getNewLaunchBikesDetails()[pri:4, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-02T10:09:11 IST" name="getNewLaunchBikesDetails" finished-at="2024-02-02T10:09:21 IST" duration-ms="10572" status="PASS">
+        <test-method signature="getNewLaunchBikesDetails()[pri:4, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-07T14:43:17 IST" name="getNewLaunchBikesDetails" finished-at="2024-02-07T14:43:26 IST" duration-ms="9015" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getNewLaunchBikesDetails -->
-        <test-method signature="navigateToHomePage()[pri:5, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-02T10:09:22 IST" name="navigateToHomePage" finished-at="2024-02-02T10:09:24 IST" duration-ms="2202" status="PASS">
+        <test-method signature="navigateToHomePage()[pri:5, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-07T14:43:26 IST" name="navigateToHomePage" finished-at="2024-02-07T14:43:28 IST" duration-ms="1420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToHomePage -->
-        <test-method signature="navFromUsedCarsToLocation()[pri:6, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-02T10:09:25 IST" name="navFromUsedCarsToLocation" finished-at="2024-02-02T10:09:55 IST" duration-ms="29879" status="PASS">
+        <test-method signature="navFromUsedCarsToLocation()[pri:6, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-07T14:43:29 IST" name="navFromUsedCarsToLocation" finished-at="2024-02-07T14:43:40 IST" duration-ms="11140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navFromUsedCarsToLocation -->
-        <test-method signature="clickAllPopularCarModels()[pri:7, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-02T10:09:56 IST" name="clickAllPopularCarModels" finished-at="2024-02-02T10:10:14 IST" duration-ms="18597" status="PASS">
+        <test-method signature="clickAllPopularCarModels()[pri:7, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-07T14:43:40 IST" name="clickAllPopularCarModels" finished-at="2024-02-07T14:43:59 IST" duration-ms="18503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickAllPopularCarModels -->
-        <test-method signature="fetchAllPopularModels()[pri:8, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-02T10:10:14 IST" name="fetchAllPopularModels" finished-at="2024-02-02T10:10:16 IST" duration-ms="1379" status="PASS">
+        <test-method signature="fetchAllPopularModels()[pri:8, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-07T14:43:59 IST" name="fetchAllPopularModels" finished-at="2024-02-07T14:44:00 IST" duration-ms="807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fetchAllPopularModels -->
-        <test-method signature="navigateBackToHome()[pri:9, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-02T10:10:16 IST" name="navigateBackToHome" finished-at="2024-02-02T10:10:18 IST" duration-ms="2215" status="PASS">
+        <test-method signature="navigateBackToHome()[pri:9, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-07T14:44:00 IST" name="navigateBackToHome" finished-at="2024-02-07T14:44:01 IST" duration-ms="1285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateBackToHome -->
-        <test-method signature="clickOnLogin()[pri:10, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-02T10:10:20 IST" name="clickOnLogin" finished-at="2024-02-02T10:10:25 IST" duration-ms="5384" status="PASS">
+        <test-method signature="clickOnLogin()[pri:10, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-07T14:44:02 IST" name="clickOnLogin" finished-at="2024-02-07T14:44:05 IST" duration-ms="3098" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnLogin -->
-        <test-method signature="fetchErrorMessage()[pri:11, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-02T10:10:26 IST" name="fetchErrorMessage" finished-at="2024-02-02T10:10:28 IST" duration-ms="2245" status="PASS">
+        <test-method signature="fetchErrorMessage()[pri:11, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-07T14:44:05 IST" name="fetchErrorMessage" finished-at="2024-02-07T14:44:08 IST" duration-ms="2174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fetchErrorMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-02T10:10:28 IST" name="tearDown" finished-at="2024-02-02T10:10:30 IST" duration-ms="1457" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.TC_004_VerifyInvalidUser@4b29d1d2]" started-at="2024-02-07T14:44:08 IST" name="tearDown" finished-at="2024-02-07T14:44:09 IST" duration-ms="1200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

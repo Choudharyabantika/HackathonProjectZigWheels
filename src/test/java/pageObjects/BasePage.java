@@ -37,14 +37,11 @@ public class BasePage {
 		js.executeScript("arguments[0].click();",element);
 	}
 	
-	public void scrollIntoView(WebElement viewElement) {
-		JavascriptExecutor js=(JavascriptExecutor)driver;
-		
-		js.executeScript("arguments[0].scrollIntoView();",viewElement);
+	
+	public void highlightElement(WebElement element) {
+		try {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].setAttribute('style', 'border: 2px solid black;');", element);
+		}catch(Exception e) {}
 	}
-	public void sendKeyUsingJs(WebElement element,String value) {
-		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("arguments[0].setAttribute('value',"+value+");", element);
-	}
-
 }

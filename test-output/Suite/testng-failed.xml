@@ -4,22 +4,17 @@
   <listeners>
     <listener class-name="utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name="GroupTest(failed)">
+  <test thread-count="5" name="MasterTest(failed)">
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
-    <groups>
-      <run>
-        <include name="sanity"/>
-      </run>
-    </groups>
     <classes>
       <class name="testCase.TC_004_VerifyInvalidUser">
         <methods>
+          <include name="clickOnLogin"/>
           <include name="tearDown"/>
-          <include name="navigateToHomePage"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testCase.TC_004_VerifyInvalidUser -->
     </classes>
-  </test> <!-- GroupTest(failed) -->
+  </test> <!-- MasterTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
