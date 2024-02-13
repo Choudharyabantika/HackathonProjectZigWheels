@@ -1,0 +1,46 @@
+10:53:27.208 [main] INFO  testCase.TC_004_VerifyInvalidUser - Printing the error message of invalid google login
+10:53:27.218 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_004_VerifyInvalidUser finished *****
+11:00:12.539 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_001_NewBikes_UpcomingBikes starting *****
+11:00:17.586 [main] INFO  testCase.TC_004_VerifyInvalidUser - Checking whether upcoming Bikes page is navigated or not
+11:00:17.589 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_001_NewBikes_UpcomingBikes finished *****
+11:00:17.823 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_002_UpcomingBikeManufacturers starting *****
+11:00:17.824 [main] INFO  testCase.TC_004_VerifyInvalidUser - Selecting Honda in the manufacturer dropdown
+11:00:51.981 [main] INFO  testCase.TC_004_VerifyInvalidUser - Fetching newly launched bikes in upcoming bikes Honda section
+11:01:33.913 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_002_UpcomingBikeManufacturers finished *****
+11:01:34.195 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_003_UsedCarsLocationSpecificTest starting *****
+11:02:33.282 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_003_UsedCarsLocationSpecificTest finished *****
+11:02:34.552 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_004_VerifyInvalidUser starting *****
+11:02:34.556 [main] INFO  testCase.TC_004_VerifyInvalidUser - Clicking on login button
+11:02:35.115 [main] INFO  testCase.TC_004_VerifyInvalidUser - click on google
+11:02:37.672 [main] INFO  testCase.TC_004_VerifyInvalidUser - Registring with invalid email id
+11:02:40.756 [main] INFO  testCase.TC_004_VerifyInvalidUser - Printing the error message of invalid google login
+11:02:40.756 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_004_VerifyInvalidUser finished *****
+11:03:44.703 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_001_NewBikes_UpcomingBikes starting *****
+11:04:09.355 [main] INFO  testCase.TC_004_VerifyInvalidUser - Checking whether upcoming Bikes page is navigated or not
+11:04:09.357 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_001_NewBikes_UpcomingBikes finished *****
+11:04:09.546 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_002_UpcomingBikeManufacturers starting *****
+11:04:09.547 [main] INFO  testCase.TC_004_VerifyInvalidUser - Selecting Honda in the manufacturer dropdown
+11:04:43.780 [main] INFO  testCase.TC_004_VerifyInvalidUser - Fetching newly launched bikes in upcoming bikes Honda section
+11:04:55.001 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_002_UpcomingBikeManufacturers finished *****
+11:04:55.521 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_003_UsedCarsLocationSpecificTest starting *****
+11:06:30.156 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_003_UsedCarsLocationSpecificTest finished *****
+11:06:30.481 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_004_VerifyInvalidUser starting *****
+11:06:30.483 [main] INFO  testCase.TC_004_VerifyInvalidUser - Clicking on login button
+11:06:30.674 [main] INFO  testCase.TC_004_VerifyInvalidUser - click on google
+11:06:32.825 [main] INFO  testCase.TC_004_VerifyInvalidUser - Registring with invalid email id
+11:06:35.710 [main] INFO  testCase.TC_004_VerifyInvalidUser - Printing the error message of invalid google login
+11:06:35.711 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_004_VerifyInvalidUser finished *****
+11:07:39.259 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_001_NewBikes_UpcomingBikes starting *****
+11:08:42.914 [main] INFO  testCase.TC_004_VerifyInvalidUser - Checking whether upcoming Bikes page is navigated or not
+11:08:42.917 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_001_NewBikes_UpcomingBikes finished *****
+11:08:43.095 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_002_UpcomingBikeManufacturers starting *****
+11:08:43.097 [main] INFO  testCase.TC_004_VerifyInvalidUser - Selecting Honda in the manufacturer dropdown
+11:09:16.743 [main] INFO  testCase.TC_004_VerifyInvalidUser - Fetching newly launched bikes in upcoming bikes Honda section
+11:09:29.281 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_003_UsedCarsLocationSpecificTest starting *****
+11:09:29.512 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_004_VerifyInvalidUser starting *****
+11:09:29.550 [main] INFO  testCase.TC_004_VerifyInvalidUser - Clicking on login button
+11:09:31.585 [main] INFO  testCase.TC_004_VerifyInvalidUser - Printing the error message of invalid google login
+11:09:31.586 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_004_VerifyInvalidUser finished *****
+11:27:34.840 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_001_NewBikes_UpcomingBikes starting *****
+11:28:10.992 [main] INFO  testCase.TC_004_VerifyInvalidUser - Checking whether upcoming Bikes page is navigated or not
+11:28:10.996 [main] INFO  testCase.TC_004_VerifyInvalidUser - ***** TC_001_NewBikes_UpcomingBikes finished *****

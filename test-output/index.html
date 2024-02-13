@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods,   11 passed</span>
+                    <span class="method-stats">11 methods, 4 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCase.TC_004_VerifyInvalidUser" class="method navigator-link" hash-for-method="clickOnLogin">clickOnLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCase.TC_004_VerifyInvalidUser" class="method navigator-link" hash-for-method="navFromUsedCarsToLocation">navFromUsedCarsToLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCase.TC_004_VerifyInvalidUser" class="method navigator-link" hash-for-method="navigateBackToHome">navigateBackToHome</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCase.TC_004_VerifyInvalidUser" class="method navigator-link" hash-for-method="selectManufacturers">selectManufacturers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,11 +133,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCase.TC_004_VerifyInvalidUser" class="method navigator-link" hash-for-method="clickAllPopularCarModels">clickAllPopularCarModels</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCase.TC_004_VerifyInvalidUser" class="method navigator-link" hash-for-method="clickOnLogin">clickOnLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -128,27 +152,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCase.TC_004_VerifyInvalidUser" class="method navigator-link" hash-for-method="navFromUsedCarsToLocation">navFromUsedCarsToLocation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCase.TC_004_VerifyInvalidUser" class="method navigator-link" hash-for-method="navigateBackToHome">navigateBackToHome</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCase.TC_004_VerifyInvalidUser" class="method navigator-link" hash-for-method="navigateNewBikes">navigateNewBikes</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCase.TC_004_VerifyInvalidUser" class="method navigator-link" hash-for-method="navigateToHomePage">navigateToHomePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCase.TC_004_VerifyInvalidUser" class="method navigator-link" hash-for-method="selectManufacturers">selectManufacturers</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -168,6 +177,144 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCase.TC_004_VerifyInvalidUser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnLogin">
+                  </a> <!-- clickOnLogin -->
+                  <span class="method-name">clickOnLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.130)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [68d7656639d18d0850b0643fcca3d14b, findElement {using=xpath, value=//div[@class=&apos;h-sid h-sid-s fnt-14&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\2303514\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53691}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.203.182.82:4444/ses..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68d7656639d18d0850b0643fcca3d14b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at pageObjects.GoogleLogin.clickOnLoginSignUp(GoogleLogin.java:36)
+	at testCase.TC_004_VerifyInvalidUser.clickOnLogin(TC_004_VerifyInvalidUser.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navFromUsedCarsToLocation">
+                  </a> <!-- navFromUsedCarsToLocation -->
+                  <span class="method-name">navFromUsedCarsToLocation</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=120.0.6099.130)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [68d7656639d18d0850b0643fcca3d14b, clickElement {id=DC734FE0F0C879BB92B0B19196876EAC_element_394}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\2303514\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53691}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.203.182.82:4444/ses..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on Windows 11 (68d7656639d18d0850b0643fcca3d14b)] -&gt; xpath: //div[@class=&apos;h-dd-r&apos;]//li[4]//span]
+Session ID: 68d7656639d18d0850b0643fcca3d14b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at pageObjects.HomePageZigWheels.hoverFromUsedCarsToLocation(HomePageZigWheels.java:51)
+	at testCase.TC_003_UsedCarsLocationSpecificTest.navFromUsedCarsToLocation(TC_003_UsedCarsLocationSpecificTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateBackToHome">
+                  </a> <!-- navigateBackToHome -->
+                  <span class="method-name">navigateBackToHome</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.130)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [68d7656639d18d0850b0643fcca3d14b, findElement {using=xpath, value=//img[@data-track-label=&apos;zw-header-logo&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\2303514\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53691}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.203.182.82:4444/ses..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68d7656639d18d0850b0643fcca3d14b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at pageObjects.UserCars.navigateBack(UserCars.java:55)
+	at testCase.TC_003_UsedCarsLocationSpecificTest.navigateBackToHome(TC_003_UsedCarsLocationSpecificTest.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectManufacturers">
+                  </a> <!-- selectManufacturers -->
+                  <span class="method-name">selectManufacturers</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (360, 607)
+  (Session info: chrome=120.0.6099.130)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [68d7656639d18d0850b0643fcca3d14b, clickElement {id=FC0D1C0DEED353B93A3536D4D2F43357_element_148}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\2303514\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53691}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.203.182.82:4444/ses..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on Windows 11 (68d7656639d18d0850b0643fcca3d14b)] -&gt; xpath: //select[@id=&apos;makeId&apos;]]
+Session ID: 68d7656639d18d0850b0643fcca3d14b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at pageObjects.UpcomingBikes.selectUpcomingBikeFromDropDown(UpcomingBikes.java:47)
+	at testCase.TC_002_UpcomingBikeManufacturers.selectManufacturers(TC_002_UpcomingBikeManufacturers.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -179,13 +326,6 @@
                   <a name="clickAllPopularCarModels">
                   </a> <!-- clickAllPopularCarModels -->
                   <span class="method-name">clickAllPopularCarModels</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickOnLogin">
-                  </a> <!-- clickOnLogin -->
-                  <span class="method-name">clickOnLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -211,20 +351,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="navFromUsedCarsToLocation">
-                  </a> <!-- navFromUsedCarsToLocation -->
-                  <span class="method-name">navFromUsedCarsToLocation</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="navigateBackToHome">
-                  </a> <!-- navigateBackToHome -->
-                  <span class="method-name">navigateBackToHome</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="navigateNewBikes">
                   </a> <!-- navigateNewBikes -->
                   <span class="method-name">navigateNewBikes</span>
@@ -235,13 +361,6 @@
                   <a name="navigateToHomePage">
                   </a> <!-- navigateToHomePage -->
                   <span class="method-name">navigateToHomePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectManufacturers">
-                  </a> <!-- selectManufacturers -->
-                  <span class="method-name">selectManufacturers</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -428,54 +547,54 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'clickAllPopularCarModels')
+data.setCell(0, 1, 'navFromUsedCarsToLocation')
 data.setCell(0, 2, 'testCase.TC_004_VerifyInvalidUser')
-data.setCell(0, 3, 18503);
+data.setCell(0, 3, 32915);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'navFromUsedCarsToLocation')
+data.setCell(1, 1, 'clickAllPopularCarModels')
 data.setCell(1, 2, 'testCase.TC_004_VerifyInvalidUser')
-data.setCell(1, 3, 11140);
+data.setCell(1, 3, 30052);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getNewLaunchBikesDetails')
+data.setCell(2, 1, 'fetchAllPopularModels')
 data.setCell(2, 2, 'testCase.TC_004_VerifyInvalidUser')
-data.setCell(2, 3, 9015);
+data.setCell(2, 3, 18849);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'navigateNewBikes')
+data.setCell(3, 1, 'getNewLaunchBikesDetails')
 data.setCell(3, 2, 'testCase.TC_004_VerifyInvalidUser')
-data.setCell(3, 3, 5721);
+data.setCell(3, 3, 17706);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'selectManufacturers')
+data.setCell(4, 1, 'navigateNewBikes')
 data.setCell(4, 2, 'testCase.TC_004_VerifyInvalidUser')
-data.setCell(4, 3, 3367);
+data.setCell(4, 3, 3996);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'clickOnLogin')
+data.setCell(5, 1, 'navigateToHomePage')
 data.setCell(5, 2, 'testCase.TC_004_VerifyInvalidUser')
-data.setCell(5, 3, 3098);
+data.setCell(5, 3, 2125);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'fetchErrorMessage')
 data.setCell(6, 2, 'testCase.TC_004_VerifyInvalidUser')
-data.setCell(6, 3, 2174);
+data.setCell(6, 3, 2020);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'navigateToHomePage')
+data.setCell(7, 1, 'selectManufacturers')
 data.setCell(7, 2, 'testCase.TC_004_VerifyInvalidUser')
-data.setCell(7, 3, 1420);
+data.setCell(7, 3, 1547);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'navigateBackToHome')
+data.setCell(8, 1, 'verify_UpcomingBikes_section')
 data.setCell(8, 2, 'testCase.TC_004_VerifyInvalidUser')
-data.setCell(8, 3, 1285);
+data.setCell(8, 3, 71);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'fetchAllPopularModels')
+data.setCell(9, 1, 'clickOnLogin')
 data.setCell(9, 2, 'testCase.TC_004_VerifyInvalidUser')
-data.setCell(9, 3, 807);
+data.setCell(9, 3, 48);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verify_UpcomingBikes_section')
+data.setCell(10, 1, 'navigateBackToHome')
 data.setCell(10, 2, 'testCase.TC_004_VerifyInvalidUser')
-data.setCell(10, 3, 156);
+data.setCell(10, 3, 36);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 56 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -508,51 +627,59 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">navigateNewBikes</span>
-                <span class="method-start">11160 ms</span>
+                <span class="method-start">28830 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_UpcomingBikes_section</span>
-                <span class="method-start">17228 ms</span>
+                <span class="method-start">33125 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">selectManufacturers</span>
-                <span class="method-start">17652 ms</span>
+                <span class="method-start">33496 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getNewLaunchBikesDetails</span>
-                <span class="method-start">21316 ms</span>
+                <span class="method-start">35215 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">navigateToHomePage</span>
-                <span class="method-start">30840 ms</span>
+                <span class="method-start">53158 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">navFromUsedCarsToLocation</span>
-                <span class="method-start">33318 ms</span>
+                <span class="method-start">56488 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickAllPopularCarModels</span>
-                <span class="method-start">44945 ms</span>
+                <span class="method-start">89597 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">fetchAllPopularModels</span>
-                <span class="method-start">63747 ms</span>
+                <span class="method-start">119968 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">navigateBackToHome</span>
-                <span class="method-start">64872 ms</span>
+                <span class="method-start">138842 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">clickOnLogin</span>
-                <span class="method-start">66978 ms</span>
+                <span class="method-start">138915 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">fetchErrorMessage</span>
-                <span class="method-start">70202 ms</span>
+                <span class="method-start">139001 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">72467 ms</span>
+                <span class="method-start">141034 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

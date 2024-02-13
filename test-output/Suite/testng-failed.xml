@@ -12,7 +12,10 @@
         <methods>
           <include name="clickOnLogin"/>
           <include name="tearDown"/>
+          <include name="selectManufacturers"/>
+          <include name="navigateBackToHome"/>
           <include name="setup"/>
+          <include name="navFromUsedCarsToLocation"/>
         </methods>
       </class> <!-- testCase.TC_004_VerifyInvalidUser -->
     </classes>
